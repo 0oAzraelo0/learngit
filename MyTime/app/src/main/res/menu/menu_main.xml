@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <!--在更多菜单选项中添加item-->
+    <!--包括id，名称，排序，显示方式为点击菜单后显示-->
+    <item
+        android:id="@+id/task"
+        android:title="任务"
+        android:orderInCategory="1"
+        app:showAsAction="never"
+        ></item>
+    <item
+        android:id="@+id/statics"
+        android:title="统计"
+        android:orderInCategory="2"
+        app:showAsAction="never"
+        ></item>
+    <item
+        android:id="@+id/setting"
+        android:title="设置"
+        android:orderInCategory="3"
+        app:showAsAction="never"
+        ></item>
+    <item
+        android:id="@+id/about"
+        android:title="关于"
+        android:orderInCategory="4"
+        app:showAsAction="never"
+        ></item>
+</menu>

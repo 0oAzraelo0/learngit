@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--自定义主题-->
+    <style name="MyTheme" parent="Theme.AppCompat.Light">
+        <!--"AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+         <!--Customize your theme here.-->
+        <!--默认样式-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--设置标题与更多menu为白色-->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <!--设置其他样式-->
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/MyDropDownListView</item>
+        <item name="android:itemTextAppearance">@style/OverflowItemText</item>
+
+    </style>
+    <!--设置overflow背景颜色-->
+    <style name="MyPopupMenu" parent="android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+    <!-- 设置overflow中的item的相关属性 -->
+    <style name="MyDropDownListView" parent="android:style/Widget.Holo.Light.ListView.DropDown">
+        <!-- 设置overflow中的item的选中背景 -->
+        <item name="android:listSelector">@android:color/holo_blue_light</item>
+        <!-- 设置overflow中的item之间的分割线 -->
+        <item name="android:divider">@android:color/darker_gray</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+    <!--设置overflow中的文字颜色 -->
+    <style name="OverflowItemText" parent="@android:style/Widget.ActionButton.Overflow">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">20sp</item>
+        <!--<item name="android:textAppearance">?attr/textAppearanceSmallPopupMenu</item>-->
+    </style>
+
+</resources>
